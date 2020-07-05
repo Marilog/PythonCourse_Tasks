@@ -29,19 +29,39 @@ Namespaces are one honking great idea -- let's do more of those!"""
 
 #second task
 
-nat_number=1567
+nat_number = 4386
+
+#1.solution
 #mult=1
 #while(nat_number!=0):
-   # mult=mult*(nat_number%10)
-    #nat_number=nat_number//10
+ #   mult=mult*(nat_number%10)
+  #  nat_number=nat_number//10
 #print(mult)
 
 
+#2.solution
+number_to_list = [int(x) for x in str(nat_number)]
+print(str(number_to_list))
 
-number_to_string = [int(x) for x in str(nat_number)]
-def multiplyList (myList):
+def multiplyList(myList):
     result = 1
     for x in myList:
-        result = result * x
+        result=result * x
     return result
-print(multiplyList(number_to_string))
+print(multiplyList(number_to_list))
+
+#3.solution
+import numpy
+mult_with_np = numpy.prod(number_to_list)
+print(mult_with_np)
+
+#import math
+#mult_with_math = math.prod(number_to_list)
+#print(mult_with_math) #for python 3.8
+
+
+print(number_to_list[::-1])
+
+
+sorted_list = sorted(number_to_list)
+print(sorted_list)
