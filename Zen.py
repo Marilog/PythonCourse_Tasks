@@ -1,3 +1,4 @@
+#first task Zen of Python
 Zen_Python = """Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -18,16 +19,29 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!"""
 
-
 #print(Zen_Python)
 
-cnt_better=Zen_Python.count("better")
-cnt_is=Zen_Python.count("is")
-cnt_never=Zen_Python.count("never")
-print("The count of BETTER is ", cnt_better,  "The count of IS is", cnt_is, "The count of NEVER is", cnt_never)
+#print("The count of BETTER is ", Zen_Python.count("better"))
+#print("The count of NEVER is ", Zen_Python.count("never") )
+#print("The count of IS is ", Zen_Python.count("is"))
+#print(Zen_Python.upper())
+#print(Zen_Python.replace("i", "&"))
 
-upper_register_function=Zen_Python.upper()
-print(upper_register_function)
+#second task
 
-replace_function=Zen_Python.replace("i", "&")
-print(replace_function)
+nat_number=1567
+#mult=1
+#while(nat_number!=0):
+   # mult=mult*(nat_number%10)
+    #nat_number=nat_number//10
+#print(mult)
+
+
+
+number_to_string = [int(x) for x in str(nat_number)]
+def multiplyList (myList):
+    result = 1
+    for x in myList:
+        result = result * x
+    return result
+print(multiplyList(number_to_string))
