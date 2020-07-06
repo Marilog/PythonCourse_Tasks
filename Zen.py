@@ -65,3 +65,16 @@ print(number_to_list[::-1])
 
 sorted_list = sorted(number_to_list)
 print(sorted_list)
+
+
+
+#3.task
+
+var_1 = 134
+var_2 = 543243
+
+var_1, var_2 = var_2, var_1
+
+print("Swapped first variable is ", var_1)
+print("Swapped second variable is ", var_2)
+
