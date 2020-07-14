@@ -5,3 +5,6 @@ def correct_tail(body, tail):
 
     else:
       return False
+
+
+#return True if body[-1]==tail else False
